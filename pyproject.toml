@@ -1,0 +1,29 @@
+# Author: Peter Dragos
+# Repository: https://github.com/dragospe/python-flake-template
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "placeholder description"
+authors = ["Peter Dragos", "Sylvie Hacker"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.4.3"
+flake8 = "^6.1.0"
+pylint = "^3.0.2"
+mypy = "^1.7.1"
+
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+app = 'app:main'
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
