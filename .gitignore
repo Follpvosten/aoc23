@@ -1,3 +1,5 @@
 result**
 .direnv**
-app/__pycache__
+app/**/__pycache__
+.pytest_cache
+input-day*.txt

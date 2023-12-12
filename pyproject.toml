@@ -4,7 +4,7 @@
 name = "app"
 version = "0.1.0"
 description = "placeholder description"
-authors = ["Peter Dragos", "Sylvie Hacker"]
+authors = ["Sylvie Hacker"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -18,11 +18,6 @@ mypy = "^1.7.1"
 
 [tool.poetry.scripts]
 app = 'app:main'
-
-[tool.pytest.ini_options]
-addopts = [
-    "--import-mode=importlib",
-]
 
 [build-system]
 requires = ["poetry-core"]
